@@ -29,7 +29,7 @@ body {
 }
 
 .menu {
-    background-color: rgb(235, 229, 232);
+    background-color: rgb(196, 195, 195);
     border-radius: 7px;
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,12 @@ body {
     width: 280px;
     height: 40px;
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
 }
 
 .home:hover {
@@ -79,7 +80,9 @@ body {
     align-items: center;
 
 }
-
+label{
+    margin-left: 45px;
+}
 .inputs {
     margin-top: 60px;
 }
