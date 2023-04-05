@@ -6,33 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style/style2.css">
 </head>
 
 <body>
-    <h1>Write</h1>
+    <h1 class="title">Conference Online Registration</h1>
+    <form method="post" action="/sub" class="form">
 
-    <form method="post" action="/sub">
-        <label>Name</label> <br>
-        <input type="text" name='userName' /><br> <br>
-        <label>Age</label>
-        <input type="number" name="userAge" /> <br><br>
-        <label>Password</label>
-        <input type="password" name='password' /><br><br>
-        <label>checkbox</label>
-        <input type="checkbox" name='checkbox' />
-        <label>select</label>
-        <select name="select">
-            <option value="am">Armenia</option>
-            <option value="ru">Russia</option>
-        </select>
+        <div class="name-inputs">
+            <label>Full Name*</label> <br>
+            <input class="user-name  hover" placeholder="First Name" type="text" name="userName" />
+
+            <input class="user-name  hover" placeholder="Last Name" type="text" name="userName2" />
+            <br>
+
+        </div>
+        <label class="area">Area*</label> <br>
+        <select class="first-select   hover" name="select">
+            <option value="1">please Select</option>
+            <option value="2">Admin</option>
+            <option value="3">Registor</option>
+            <option value="4">Other</option>
+        </select> <br>
+
+        <div class="adresses">
+            <label>Adresses</label> <br>
+            <input class="adresses-inp   hover" type="text" name="adresses" />
+            <h5>Street Address</h5>
+
+            <input class="adresses-inp   hover" type="text" name="adresses" />
+            <h5>Street Address Line 2</h5>
+        </div>
 
 
-        <label>Your gender</label>
-        <input type="radio" name="group" value="male" />
+        <input class="inp   hover" placeholder="city" type="text" name="city" />
+        <input  name="state" class="inp   hover" placeholder="State / Province" type="text" /> <br> <br>
+        <input class="inp   hover" placeholder="Postal / Zip Code" type="text" />
+        <select class="second-select   hover" name="country">
+            <option value="first" placeholder="please select">Armenia</option>
+            <option value="Second">Russia</option>
+            <option value="Third">Spain</option>
+            <option value="Forth">Italy</option>
+        </select> <br>
 
-        <input type="radio" name="group" value="female" />
-        
-        <input type="submit" value='send' />
+
+        <div class="e-mail">
+            <label>E-mail*</label> <br>
+            <input  name="mail"  class="e-mail-inp   hover" type="text"placeholder="example@example.com" /><br>
+        </div>
+
+        <div class="phone-number">
+            <label>Phone Number*</label> <br>
+            <input class="number-inp   hover" type="text" name="userNumber" placeholder="(000)00-00-00" /> <br>
+        </div>
+
+
+        <h3>First Time to attend this conference</h3>
+        <input type="checkbox" name="checkbox">
+        <label>Yes</label>
+        <input type="checkbox" name="checkbox">
+        <label>No</label> <br> <br>
+
+        <input class="send" type="submit" />
+
+
+
 
 
     </form>

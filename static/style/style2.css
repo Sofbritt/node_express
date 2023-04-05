@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(255, 208, 224);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin-left: 30%;
+
+}
+
+
+
+.user-name {
+    width: 250px;
+    height: 25px;
+}
+
+
+.first-select {
+    width: 250px;
+    height: 25px;
+    margin-top: 25px;
+}
+
+.adresses {
+    margin-top: 25px;
+}
+
+.adresses-inp {
+
+    width: 510px;
+    height: 25px;
+
+}
+
+
+.inp {
+    width: 250px;
+    height: 25px;
+}
+
+.second-select {
+    width: 260px;
+    height: 30px;
+}
+
+.e-mail {
+    margin-top: 25px;
+}
+
+.e-mail-inp {
+    width: 250px;
+    height: 25px;
+}
+
+.phone-number {
+    margin-top: 25px;
+}
+
+.number-inp {
+    width: 250px;
+    height: 25px;
+}
+
+.send {
+    width: 200px;
+    height: 25px;
+    background-color: rgb(96, 96, 255);
+    margin-left: 155px;
+
+}
+
+.hover:hover {
+    border: 2px solid rgb(99, 99, 241);
+}
